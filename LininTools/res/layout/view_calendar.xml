@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/topbuttons0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cell_heigh"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/previous_month" />
+
+        <Button
+            android:id="@+id/btCenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="二月 2014"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/next_month" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:layout_below="@+id/topbuttons0"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView
+            android:text="周一" 
+            style="@style/textview_calendar"/>
+        <TextView
+            android:text="周二" 
+            style="@style/textview_calendar"/>
+        <TextView
+            android:text="周三" 
+            style="@style/textview_calendar"/>
+        <TextView
+            android:text="周四" 
+            style="@style/textview_calendar"/>
+        <TextView
+            android:text="周五" 
+            style="@style/textview_calendar"/>
+        <TextView
+            android:text="周六" 
+            style="@style/textview_calendar"/>
+        <TextView
+            android:text="周日" 
+            style="@style/textview_calendar"/>
+    </LinearLayout>
+
+    <com.linin.view.calendar.CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbuttons"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>

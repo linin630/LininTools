@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- 日历用到的数据 -->
+    <dimen name="week_top_margin">74px</dimen>
+    <dimen name="week_left_margin">40px</dimen>
+    <dimen name="cell_width">58px</dimen>
+    <dimen name="cell_heigh">62px</dimen>
+    <dimen name="cell_margin_top">92px</dimen>
+    <dimen name="cell_margin_left">39px</dimen>
+    <dimen name="cell_text_size">26px</dimen>
+    
+    <!-- loading宽高 -->
+    <dimen name="loading_w">30dp</dimen>
+    
+    <!-- HVListView相关 -->
+    <dimen name="index_table_head">100dp</dimen>
+    <dimen name="index_table_width">90dp</dimen>
+    <dimen name="index_table_height">40dp</dimen>
+    <dimen name="index_table_width_all">900dp</dimen>
+    <dimen name="index_table_textsize">12sp</dimen>
+
+</resources>
